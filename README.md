@@ -6,7 +6,7 @@ By having UCI HAR Dataset directory in your working directory, you should be abl
 
 # # Analysis step-by-step
 
-1. I analyzed the datasets and loaded them both into R.
+1. I analyzed the X-train and X-test datasets and loaded them both into R.
 2. After seeing they both have the same amount of variables, I knew then I should put them together via rbind.
 3. I named all the variables using "features.txt" file. Then I filtered only those columns having "mean()" or "std()" in its name. As a stepping stone I had to discard duplicate columns, because matching function was behaving funny without it. 
 4. Then I loaded activity and subject info (both for train and test). At first I put train and test together the same way I did it with the original data and then I added those columns to the dataframe. It was crucial to do it at this point, because after merging the order of the rows is changed.
