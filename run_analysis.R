@@ -26,8 +26,6 @@ subjectTest <- read.table("UCI HAR Dataset/test/subject_test.txt")
 filtered$activityID <- c(activityTrain[, 1], activityTest[, 1])
 filtered$subjectID <- c(subjectTrain[, 1], subjectTest[, 1])
 
-filtered$subjectID
-
 activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt")
 colnames(activityLabels) <- c("activityID", "activityDescription")
 
